@@ -65,12 +65,12 @@ export default function Home() {
     //     </a>
     //   </footer>
     // </div>
-    <>
+    <section className={styles.body}>
       <header className={styles.header}>today's otenki</header>
-      <body>
+      <body className={styles.main_body}>
         <section className={styles.main_top}>
           <div className={styles.map}>
-            <img href="/map-japan-silhouette.png" alt="dfgh" />
+            <img className={styles.map_body} src="/map-japan-silhouette.png" alt="dfgh" />
           </div>
         </section>
         <section>
@@ -83,16 +83,14 @@ export default function Home() {
                 </form>
               </div>
               <div className={styles.unit}>
-                <div >
-                  <div className={styles.date}>13日</div>
-                  <div className={styles.time}>12:30</div>
-                </div>
+                <div className={styles.date}>13日</div>
+                <div className={styles.time}>12:30</div>
               </div>
               <div className={styles.result_body}>🌥</div>
             </div>
           </div>
         </section>
       </body>
-    </>
+    </section>
   )
 }
